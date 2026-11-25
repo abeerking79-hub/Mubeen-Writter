@@ -212,7 +212,12 @@ async function loadPoetry() {
 
     try {
 
-        const snapshot = await getDocs(collection(db, "poems"));
+        const poemsQuery = query(
+    collection(db, "poems"),
+    where("published", "==", true)
+);
+
+const snapshot = await getDocs(poemsQuery);
 
         allPoetry = [];
 

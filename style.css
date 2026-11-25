@@ -419,4 +419,21 @@ footer p {
         padding: 15px;
     }
 }
-S
+/* AUTHOR PHOTO */
+
+.author-photo {
+    width: 200px;
+    height: 200px;
+    margin: 25px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #c9a15b;
+    box-shadow: 0 0 20px rgba(201, 161, 91, 0.3);
+}
+
+.author-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
